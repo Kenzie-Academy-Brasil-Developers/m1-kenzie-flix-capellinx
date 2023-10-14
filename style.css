@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #000000;
     color: #ffffff;
 }
@@ -21,6 +21,12 @@ footer {
     text-align: center;
 }
 
+button,
+.container-list p,
+.container-list li img {
+    cursor: pointer;
+}
+
 .container-logo img,
 .container-primary h1,
 .container-primary li img,
@@ -28,10 +34,14 @@ footer {
     margin-top: 50px;
 }
 
+.card-container{ 
+    display: flex;
+    flex-direction: column;
+}
+
 .container-list li img {
     width: 60%;
     border-radius: 10px;
-    cursor: pointer; 
 }
 
 .container-list p {
@@ -41,18 +51,32 @@ footer {
 
 .container-list {
     list-style: none;
-
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     text-align: center;
 }
 
 button {
+    width: 200px;
+    padding: 10px;
     background-color: #000000;
     border: 1px solid #ffffff;
+    border-radius: 5px;
     color: #ffffff;
-    padding: 10px;
     font-size: 16px;
-    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    transition: 0.5s;
+}
+
+.card-container:hover  .img-index{
+    border: 2px solid white; 
+    transition: 0.5s;
+}
+.card-container:hover  .item-paragraph{ 
+    color: white;
+    transition: 0.5s;
 }
